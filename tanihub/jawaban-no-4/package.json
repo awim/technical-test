@@ -1,0 +1,22 @@
+{
+  "name": "tanihub-test",
+  "version": "1.0.0",
+  "description": "Technical test software engineer TaniHub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "technical test",
+    "tanihub",
+    "simple api",
+    "begineer api"
+  ],
+  "author": "mtaqwim",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
