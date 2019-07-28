@@ -1,0 +1,20 @@
+{
+  "name": "googletranslate-api",
+  "version": "1.0.0",
+  "description": "Technical test TaniHub, integration with googletranslate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "technical test",
+    "google translate",
+    "translate api",
+    "tanihub"
+  ],
+  "author": "mtaqwim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
