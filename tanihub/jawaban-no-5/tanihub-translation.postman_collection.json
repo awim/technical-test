@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "36c0aed7-803d-437b-9870-fda692a12df4",
+		"name": "tanihub-translation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET IBMWatson/translate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\" : [\"welcome to tanihub\", \"happy coding ever\"],\n\t\"lang\" : {\n\t\t\"source\" : \"en\",\n\t\t\"target\" : \"fr\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/translate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"translate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
