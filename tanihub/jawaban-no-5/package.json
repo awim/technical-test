@@ -1,20 +1,23 @@
 {
-  "name": "googletranslate-api",
+  "name": "freespeak",
   "version": "1.0.0",
-  "description": "Technical test TaniHub, integration with googletranslate",
+  "description": "Technical test TaniHub, integration with translation API",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "technical test",
-    "google translate",
+    "IBM Watson",
+    "Language Translator",
     "translate api",
     "tanihub"
   ],
   "author": "mtaqwim",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "request": "^2.88.0"
   }
 }
