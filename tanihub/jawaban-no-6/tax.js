@@ -20,29 +20,28 @@ var range = [
 
 function taxIncome(income, range){
     var i = 0;
-    var tax = 0;
+    var tax = [];
     var restincome = income;
     
-    while(i < (range.length-1) && restincome > range[i].max) {
-        tax = tax + (range[i].max * range[i].tax / 100);
-        console.log("tax 0 :  " + (range[i].max * range[i].tax / 100));
-        
-        restincome = restincome - tax;
-        console.log("restincome 0 :  " + restincome);
-        // console.log("restincome :  " + restincome);
-        i++;
-        
-    }
+    do{
+        if(range[i].max > 0 && restincome > range[i].max){
+            restincome = restincome - range[i].max;
+            tax.push(range[i].max * range[i].tax / 100);
+        } else {
+            tax.push(restincome * range[i].tax / 100);
+            break;
+        }
 
-    if(i <=  range.length && restincome > 0 ){
-        tax = tax + ( restincome * range[i].tax/100 );
-    }
+        i++;
+    } while(i < range.length);
 
     return tax;
 }
 
 var income = 75000;
-console.log("Annual Income : " + income + "\nAnnual Tax : " + taxIncome(income, range));
+var annualTax = taxIncome(income, range);
+console.log("Annual Income : " + income);
+console.log("Annual Tax : " + annualTax);
 
 
 var income = 750000;
