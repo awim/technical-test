@@ -1,0 +1,3 @@
+[submodule "tanihub/build-app-challenge/react-redux-jwt"]
+	path = tanihub/build-app-challenge/react-redux-jwt
+	url = https://gitlab.com/awim/react-shopper.git
